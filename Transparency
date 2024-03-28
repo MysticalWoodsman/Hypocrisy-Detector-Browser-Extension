@@ -2,16 +2,18 @@ Transparency and Credibility
 
 **Hypocrisy Score Formula:**
 
-\[ HypocrisyScore = \frac{HypocriticalStatements}{TotalStatements} \times 100 \]
+[ HScore = frac{HStates} over {TotStates} times 100]
 
 Where:
-- \( HypocrisyScore \) is the overall hypocrisy score, expressed as a percentage.
-- \( HypocriticalStatements \) is the number of detected hypocritical statements in the content.
-- \( TotalStatements \) is the total number of statements or assertions analyzed in the content.
+- {HScore} is the overall hypocrisy score, expressed as a percentage.
+- {HStates} is the number of detected hypocritical statements in the content.
+- {TotStates} is the total number of statements or assertions analyzed in the content.
 
-This formula calculates the hypocrisy score by dividing the number of hypocritical statements by the total number of statements and then multiplying by 100 to express the result as a percentage. A higher percentage indicates a higher level of detected hypocrisy in the analyzed content.
+This formula calculates the hypocrisy score by dividing the number of hypocritical statements by the total number of 
+statements and then multiplying by 100 to express the result as a percentage. A higher percentage indicates a 
+higher level of detected hypocrisy in the analyzed content.
 
-To further emphasize ideological neutrality and transparency, you can incorporate additional factors or considerations into the formula, such as:
+To further emphasize ideological neutrality and transparency, incorporate additional factors or considerations into the formula, such as:
 
 1. **Weighted Analysis:** Assign weights to different types of statements or contexts based on their significance in determining hypocrisy. For example, statements from authoritative sources might carry more weight than personal opinions.
 
@@ -21,4 +23,4 @@ To further emphasize ideological neutrality and transparency, you can incorporat
 
 4. **Thresholds and Ranges:** Define thresholds or ranges for interpreting the hypocrisy score, such as categorizing scores into low, medium, and high hypocrisy levels to provide clearer insights to users and investors.
 
-By incorporating these elements into your hypocrisy score formula and analysis methodology, you can demonstrate a commitment to ideological neutrality, fairness, and accuracy in evaluating content for hypocrisy. This can enhance user confidence, attract investors, and promote trust in your browser extension's capabilities.
+We are Committed to ideological neutrality, fairness, and accuracy in evaluating content for hypocrisy.
