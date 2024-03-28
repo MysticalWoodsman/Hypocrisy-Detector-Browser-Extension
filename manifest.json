@@ -1,0 +1,30 @@
+// Example code in background.js or eventPage.js
+
+// Function to extract content from the active tab and send it to the AI service
+function sendContentToAI() {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    const tab = tabs[0];
+    const content = tab.innerText; // Extract text content from the active tab
+
+    // Make an HTTP request to the AI service's API endpoint
+    fetch('https://ai-service-api.com/analyze', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer YOUR_API_KEY' // Include API key or authentication token
+      },
+      body: JSON.stringify({ content: content }) // Send extracted content as JSON data
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Handle AI response data here (e.g., display results to the user)
+      console.log('AI analysis results:', data);
+    })
+    .catch(error => {
+      console.error('Error sending content to AI:', error);
+    });
+  });
+}
+
+// Example: Trigger content extraction and AI analysis when extension button is clicked
+chrome.browserAction.onClicked.addListener(sendContentToAI);
