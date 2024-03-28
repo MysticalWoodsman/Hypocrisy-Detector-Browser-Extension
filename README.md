@@ -31,8 +31,11 @@ Usage:
 4) View the hypocrisy score (free version) or detailed report (paid version) in the extension's dropdown box.
 5) For the paid version, download the detailed report for further analysis.
 
-Contribution:
-Contributions to the Hypocrisy Detector Browser Extension project are welcome! To contribute:
+Contributions to the Hypocrisy Detector Browser Extension project are welcome!
+
+To contribute:
+
+Email MysticalWoodsman@gmail.com
 
 Fork the repository:
 1) Create a new branch (git checkout -b feature-branch).
