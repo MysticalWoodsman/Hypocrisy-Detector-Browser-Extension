@@ -1,4 +1,5 @@
 # Hypocrisy-Detector-Browser-Extension
+GoFundMe:  https://www.gofundme.com/f/hypocrisy-detection-browser-extension-app
 
 Overview:
 
