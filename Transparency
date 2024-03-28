@@ -2,7 +2,7 @@ Transparency and Credibility
 
 **Hypocrisy Score Formula:**
 
-[ HScore = frac{HStates} over {TotStates} times 100]
+[ HScore = {HStates} / {TotStates} x 100 ]
 
 Where:
 - {HScore} is the overall hypocrisy score, expressed as a percentage.
