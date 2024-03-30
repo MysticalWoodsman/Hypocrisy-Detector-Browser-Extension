@@ -1,1 +1,1 @@
-This directory contains three (3) icons for the user interface.
+This directory contains four (4) icons for the user interface.
