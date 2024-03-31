@@ -1,1 +1,1 @@
-This directory contains four (4) icons for the user interface.
+This directory contains icons for the user interface and marketing.
