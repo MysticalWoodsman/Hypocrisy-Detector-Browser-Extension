@@ -12,7 +12,7 @@ public class HypocrisyAnalyzer {
 
         MediaType mediaType = MediaType.parse("application/json");
         RequestBody body = RequestBody.create(mediaType, "{\"prompt\": \"" +
-                "Analyze the text below for hypocrisy. Look for contradictions, double standards, or hypocritical statements.  The output should start with a score based on the following formula: Score = (Statements_made / Hypocritical_statements_found) * 100.  After the score, a very short summary of the text should be produced.  After the summary, list the Hypocritical statements and the explanation of why it is hypocritical.  Do not limit evaluation to the document - Use any information available for the determination of hypocrisy in the text.\n\n" +
+                "Analyze the text below for hypocrisy. Look for contradictions, double standards, or hypocritical statements.  The output should start with a score based on the following formula: Score = (Statements_made / Hypocritical_statements_found) * 100.  After the score, a very short summary of the text should be produced.  After the summary, list the Hypocritical statements and the explanation of why it is hypocritical.  Do not limit evaluation to the document - Use any real-time information available on the internet to identify hypocrisy in the text.\n\n" +
                 text + "\", \"max_tokens\": 150}");
 
         Request request = new Request.Builder()
