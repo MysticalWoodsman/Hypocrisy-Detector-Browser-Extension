@@ -29,7 +29,7 @@ public class HypocrisyAnalyzer {
                 Explaination:
                 Source:'
             Text to Evaluate is as follows:
-            \n\n" + text + "\", \"max_tokens\": 1000}");
+            \n\n" + text + "\", \"max_tokens\": 30000}");
 
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/engines/text-davinci-003/completions")
