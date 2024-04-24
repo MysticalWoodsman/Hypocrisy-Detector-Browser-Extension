@@ -66,7 +66,7 @@ if (strpos($input_text, 'youtube.com') !== false) {
 #    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 #    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 #    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
-#    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // Only set this if you know what you're doing; generally for development purposes
+#    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // generally for development purposes
 #    $output_json = curl_exec($ch);
 #    curl_close($ch);
 
