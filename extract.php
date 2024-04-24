@@ -82,7 +82,7 @@ if (strpos($input_text, 'youtube.com') !== false) {
 $apiKey = "";
 
 // Set the API endpoint URL
-$apiUrl = "https://api.openai.com/v1/engines/gpt-3.5-turbo-instruct/completions";
+$apiUrl = "https://api.openai.com/v1/engines/";
 
 // Set the HTTP headers
 $headers = array(
@@ -99,7 +99,7 @@ curl_setopt($curl, CURLOPT_POST, true);
 
 // Set the prompt
 // Set the prompt and max_tokens parameter
-$prompt = "Please keep your output short and concise. Analyze the text below for hypocrisy. Look for contradictions, double standards, or hypocritical statements. The output should start with a Hypocrisy Rating: (LOW, MEDIUM, or HIGH) based on the formula: Statements made divided by Hypocritical statements found. After the score, a very short summary of the text should be produced. After the summary, list the Hypocritical statements and the explanation of why it is hypocritical. Do not limit evaluation to the document - Use any real-time information available on the internet to identify hypocrisy in the text.  Filter out any junk characters.  Text to Evaluate is as follows: $clean_data";
+$prompt = "[redacted] $clean_data";
 $maxTokens = 1000; // Example value, adjust as needed
 curl_setopt($curl, CURLOPT_POSTFIELDS, '{ "prompt": "' . $prompt . '", "max_tokens": ' . $maxTokens . ' }');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -134,8 +134,8 @@ if (curl_errno($curl)) {
             mkdir($error_directory, 0777, true);
         }
 
- #       // Get the email address from cookies
-#        $email = isset($_COOKIE['user_email']) ? $_COOKIE['user_email'] : 'Unknown';
+       // Get the email address from cookies
+        $email = isset($_COOKIE['user_email']) ? $_COOKIE['user_email'] : 'Unknown';
 
         $error_content = "API Error: No valid response from the API.\nURL: $input_text\nUser Email: $email\n";
         file_put_contents($error_directory . "error_" . time() . ".txt", $error_content);
