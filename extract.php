@@ -17,11 +17,9 @@ error_reporting(E_ALL);
 // Start a new session or resume the existing one
 session_start();
 
-// Your database connection details
-$servername = "localhost";
-$db_username = "fbidmote_mark";
-$pword = "dingo2020";
-$dbname = "fbidmote_hypo";
+// Your database connection details 
+
+	
 
 // Create a connection
 $conn = new mysqli($servername, $db_username, $pword, $dbname);
@@ -81,7 +79,7 @@ if (strpos($input_text, 'youtube.com') !== false) {
 }
 
 // Set the API key provided by OpenAI
-$apiKey = "sk-proj-YrslrXTjTIU73TyQXUMxT3BlbkFJavdVcRBMMwXbFfvwY1BG";
+$apiKey = "";
 
 // Set the API endpoint URL
 $apiUrl = "https://api.openai.com/v1/engines/gpt-3.5-turbo-instruct/completions";
