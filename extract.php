@@ -21,7 +21,7 @@ error_reporting(E_ALL);
 session_start();
 
 // Your database connection details 
-
+## DB Details REDACTED ##
 
 // Create a connection
 $conn = new mysqli($servername, $db_username, $pword, $dbname);
