@@ -1,5 +1,4 @@
 # Hypocrisy-Detector-Browser-Extension
-GoFundMe:  https://www.gofundme.com/f/hypocrisy-detection-browser-extension-app
 
 Overview:
 
@@ -37,16 +36,6 @@ Contributions to the Hypocrisy Detector Browser Extension project are welcome!
 To contribute:
 
 Email MysticalWoodsman@gmail.com
-
-Fork the repository:
-1) Create a new branch (git checkout -b feature-branch).
-2) Make your changes and commit them (git commit -am 'Add new feature').
-3) Push to the branch (git push origin feature-branch).
-4) Create a new Pull Request.
-5) Please follow our Contribution Guidelines for more details.
-
-License
-This project is licensed under the MIT License.
 
 Contact
 For questions or feedback, please contact MysticalWoodsman@gmail.com
