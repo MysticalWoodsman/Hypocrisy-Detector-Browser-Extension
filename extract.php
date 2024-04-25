@@ -61,15 +61,6 @@ if (strpos($input_text, 'youtube.com') !== false) {
     // Encode the array to JSON
     $output_json = json_encode($output_text_value);
 
-#    $ch = curl_init();
-#    curl_setopt($ch, CURLOPT_URL, $url);
-#    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-#    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-#    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
-#    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // generally for development purposes
-#    $output_json = curl_exec($ch);
-#    curl_close($ch);
-
     // Display the JSON-encoded value with readable text
     $clean_data = str_replace(["<\/script> ", "\n"], "", $output_json);
     $clean_data = str_replace(["{\"output_text\":\"", "\"}"], "", $output_json);
