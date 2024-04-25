@@ -149,9 +149,6 @@ if (curl_errno($curl)) {
 curl_close($curl);
 
 // Construct the Reddit content
-$reddit_content = "The analysis of the following article was processed by the Hypocrisy Detector Browser Extension. Download it now (free!) www.hypocrisy-detector.com/\n\n";
-$reddit_content .= "Source: " . $input_text . "\n\n";
-$reddit_content .= "Analysis from the Hypocrisy Extension (app):\n" . $responseData['choices'][0]['text'];  // Assuming this is your GPT response
 
 // Encode the content for the URL
 $encoded_content = urlencode($reddit_content);
@@ -160,7 +157,6 @@ $encoded_content = urlencode($reddit_content);
 $url_parts = parse_url($input_text);
 $filename = basename($url_parts['path']);
 
-$subreddit = "Hypocrisy_Extension";
 
 $title = str_replace(['-', '_'], ' ', $filename); // Replace all dashes and underscores with spaces
 $title = ucwords($title); // Capitalize the first letter of each word
@@ -206,7 +202,7 @@ if ($conn->connect_error) {
 $email = $user_email; // Example email, replace or modify based on your actual use case
 
 // SQL to decrement the scans_remaining for a specific user
-$sql = "UPDATE hypo_users SET scans_remaining = scans_remaining - 1 WHERE email = ?";
+$sql = "UPDATE [REDACTED] SET scans_remaining = scans_remaining - 1 WHERE email = ?";
 
 // Prepare the SQL statement
 $stmt = $conn->prepare($sql);
@@ -222,7 +218,7 @@ if ($stmt->execute()) {
   #  echo "Affected Rows: " . $stmt->affected_rows . "<br>";
     if ($stmt->affected_rows > 0) {
         // Query to fetch the current number of remaining scans
-        $fetchSql = "SELECT scans_remaining FROM hypo_users WHERE email = ?";
+        $fetchSql = "SELECT scans_remaining FROM [REDACTED] WHERE email = ?";
         $fetchStmt = $conn->prepare($fetchSql);
         $fetchStmt->bind_param("s", $email);
         $fetchStmt->execute();
@@ -245,7 +241,7 @@ $conn->close();
 
 <table style="width: 100%; border-collapse: collapse;">
     <tr>
-      <th style="width: 25%; border: 1px solid black; background-color: lightgreen; text-align: center;"><b><big><big><a href="https://www.hypocrisy-detector.com/discussions/index.html" target="_blank">Search<br>Archive</big></big></b></a></th>
+      <th style="width: 25%; border: 1px solid black; background-color: lightgreen; text-align: center;"><b><big><big><a href="[REDACTED]" target="_blank">Search<br>Archive</big></big></b></a></th>
       <th style="width: 50%; border: 0px solid black; background-color: yellow; text-align: center;"><center><br>If you aren't already logged in to Reddit,<b><a href="https://www.reddit.com" target="_blank"><br><big>Click Here! </big> (optional)</a></center></th>
       <th style="width: 25%; border: 1px solid black; background-color: lightgreen; text-align: center;"><?echo "$reddit_link";?></th>
     </tr>
