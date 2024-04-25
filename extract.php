@@ -3,7 +3,7 @@
 ##### ATTN CHROME STORE REVIEWER: #####
 
 ## [Database Details have been redacted for the purpose of Chrome Store Review]	
-## Lines 34 and 210+ Use cookies for the proper functionality of this back-end extension code
+## Lines 34 and 210+ use cookies for the proper functionality of this back-end extension code
 
 // Set the appropriate Content-Type header for JSON responses
 header('Content-Type: application/json');
